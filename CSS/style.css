@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  width: 100%;
+  min-height: 710px;
+}
+
+
+button {
+  position: fixed;
+  top: 40px;
+
+  color: #ffffff;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  font-size: 20px;
+
+  animation: my-btns 5s infinite;
+}
+
+
+@keyframes my-btns{
+0%{
+  border-radius: 5px;
+  padding: 5px 20px;
+}
+
+50% {
+  border-radius: 20px;
+  padding: 3px 5px;
+}
+
+100%{
+  border-radius: 5px;
+  padding: 5px 20px;
+}
+}
+
+.btn1 {
+  left: 30px;
+}
+
+.btn2 {
+  right: 30px;
+}
+
+h1 {
+  position: fixed;
+  top:50%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  font-size: 40px;
+  animation: my-header 5s infinite;
+}
+
+
+@keyframes my-header {
+  0%   {transform: translate(0, 0);}
+ 
+  50%  {transform: translate(0, 20px);}
+
+
+  100% {transform: translate(0, 0);}
+}
+
+.bubbles {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: -40px;
+  width: 100%;
+}
+
+.img{
+  width: 50px;
+  animation: bubble 7.5s infinite;
+}
+
+@keyframes bubble {
+  0%{
+    transform: translate(0,0);
+  }
+
+  100%{
+    transform: translate(0,-700px);
+    opacity: 0;
+  }
+
+}
+
+.img1 {
+  width: 20px;
+  height: 20px;
+  animation: bubble 5s infinite;
+}
+
+.img3 {
+  width: 30px;
+  height: 30px;
+  animation: bubble 7s infinite;
+}
+
+.img5 {
+  width: 20px;
+  height: 20px;
+  animation: bubble 5s infinite;
+}
+
+.img6 {
+  width: 50px;
+  height: 50px;
+  animation: bubble 9s infinite;
+}
+
+.img8 {
+  width: 15px;
+  height: 15px;
+  animation: bubble 12s infinite;
+}
+
+
+
